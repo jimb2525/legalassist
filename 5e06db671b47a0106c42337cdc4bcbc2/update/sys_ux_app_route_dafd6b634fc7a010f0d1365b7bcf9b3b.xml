@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="INSERT_OR_UPDATE">
+        <app_config display_value="Legal Assist Portal Config">42fd6b631bc7a0106c42337cdc4bcb1c</app_config>
+        <description/>
+        <fields>sysId</fields>
+        <icon/>
+        <name>Catalog Item Page</name>
+        <optional_parameters/>
+        <order>0</order>
+        <parent_macroponent display_value="Portal App Shell">b66bf1075b31101016fd7c1bf481c7a7</parent_macroponent>
+        <parent_macroponent_composition_element_id/>
+        <route_type>catalog</route_type>
+        <screen_type display_value="Catalog Item Page">9afd6b6349c7a01012ba51fc31e3f03b</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2021-03-28 20:47:36</sys_created_on>
+        <sys_id>dafd6b634fc7a010f0d1365b7bcf9b3b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Catalog Item Page</sys_name>
+        <sys_package display_value="Legal Assist" source="x_snc_legal_assist">5e06db671b47a0106c42337cdc4bcbc2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</sys_scope>
+        <sys_update_name>sys_ux_app_route_dafd6b634fc7a010f0d1365b7bcf9b3b</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-03-28 20:47:36</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="delete_multiple" query="documentkey=dafd6b634fc7a010f0d1365b7bcf9b3b"/>
+</record_update>

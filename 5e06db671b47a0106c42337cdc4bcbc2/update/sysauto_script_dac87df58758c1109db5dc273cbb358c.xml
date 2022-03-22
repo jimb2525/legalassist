@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>1fa671758758c1109db5dc273cbb35a9</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2021-12-09 01:15:50</run_start>
+        <run_time/>
+        <run_type>once</run_type>
+        <script><![CDATA[var message = 'DemoHub App Version is not supported. Please follow these steps https://community.servicenow.com/community?id=community_article&sys_id=42e9ebe4dbc3e410da1999ead396192a';
+var appVersion = '';
+
+var gr = new GlideRecord('sys_app');
+gr.get('5c1cc3cbdbf87300f669f40b0c961935');
+
+appVersion = parseFloat(gr.version);
+
+if(appVersion < 5.3){
+	var grSP = new GlideRecord('sys_properties');
+
+	if (grSP.get('1a17fc64dbcd3700f669f40b0c96191d')) {
+
+		grSP.setValue('value',message);
+
+		grSP.update();
+
+	}
+}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-09 01:15:50</sys_created_on>
+        <sys_id>dac87df58758c1109db5dc273cbb358c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1fa671758758c1109db5dc273cbb35a9</sys_name>
+        <sys_package display_value="Legal Assist" source="x_snc_legal_assist">5e06db671b47a0106c42337cdc4bcbc2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</sys_scope>
+        <sys_update_name>sysauto_script_dac87df58758c1109db5dc273cbb358c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-09 01:15:50</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

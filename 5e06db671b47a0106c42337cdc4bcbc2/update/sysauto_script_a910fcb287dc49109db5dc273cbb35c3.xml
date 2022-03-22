@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>fe26e83e87dc8910e339c956cebb3534</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2021-12-11 22:32:08</run_start>
+        <run_time/>
+        <run_type>once</run_type>
+        <script><![CDATA[var startTime = new Date().getTime();
+gs.info('#### APM: Starting "Populate full version in TPM application service software model m2m table"');
+new sn_apm.APMSAMIntegrationUtil().populateFullVersion();
+var endTime = new Date().getTime();
+gs.info('#### APM: Completed execution of "Populate full version in TPM application service software model m2m table" '  + (endTime - startTime) + 'ms');]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-11 22:32:08</sys_created_on>
+        <sys_id>a910fcb287dc49109db5dc273cbb35c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>fe26e83e87dc8910e339c956cebb3534</sys_name>
+        <sys_package display_value="Legal Assist" source="x_snc_legal_assist">5e06db671b47a0106c42337cdc4bcbc2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</sys_scope>
+        <sys_update_name>sysauto_script_a910fcb287dc49109db5dc273cbb35c3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-11 22:32:08</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

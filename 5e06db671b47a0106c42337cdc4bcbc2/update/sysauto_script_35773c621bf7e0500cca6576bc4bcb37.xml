@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>72c6b4ea1b7724106c42337cdc4bcbfa</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2021-05-01 11:43:22</run_start>
+        <run_time/>
+        <run_type>once</run_type>
+        <script><![CDATA[gs.setProperty('sn_appclient.upload_base_url','');
+gs.setProperty('sn_appauthor.upload_base_url','');
+new global.DemoHubAppGlobalUtils().sys_remote_appUpdate(false);]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-01 11:43:22</sys_created_on>
+        <sys_id>35773c621bf7e0500cca6576bc4bcb37</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>72c6b4ea1b7724106c42337cdc4bcbfa</sys_name>
+        <sys_package display_value="Legal Assist" source="x_snc_legal_assist">5e06db671b47a0106c42337cdc4bcbc2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</sys_scope>
+        <sys_update_name>sysauto_script_35773c621bf7e0500cca6576bc4bcb37</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-01 11:43:22</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

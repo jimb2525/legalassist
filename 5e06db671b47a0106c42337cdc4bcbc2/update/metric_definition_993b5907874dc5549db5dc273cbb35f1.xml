@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="metric_definition">
+    <metric_definition action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <field>state</field>
+        <name>Support Request State</name>
+        <number>MTRC0010005</number>
+        <order>100</order>
+        <script/>
+        <sys_class_name>metric_definition</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2022-01-19 03:06:07</sys_created_on>
+        <sys_id>993b5907874dc5549db5dc273cbb35f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Support Request State</sys_name>
+        <sys_package display_value="Legal Assist" source="x_snc_legal_assist">5e06db671b47a0106c42337cdc4bcbc2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</sys_scope>
+        <sys_update_name>metric_definition_993b5907874dc5549db5dc273cbb35f1</sys_update_name>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2022-01-19 03:06:07</sys_updated_on>
+        <table>x_snc_legal_assist_support_request</table>
+        <timeline>false</timeline>
+        <type>field_value_duration</type>
+    </metric_definition>
+</record_update>

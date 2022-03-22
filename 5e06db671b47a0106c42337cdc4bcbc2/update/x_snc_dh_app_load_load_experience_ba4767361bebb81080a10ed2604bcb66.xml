@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_dh_app_load_load_experience">
+    <x_snc_dh_app_load_load_experience action="INSERT_OR_UPDATE">
+        <description/>
+        <load_flow_last_updated/>
+        <load_subflow/>
+        <load_updated_status>QUEUED</load_updated_status>
+        <name/>
+        <record_producer display_value="Record producer for: null">fae109be871889109db5dc273cbb35ea</record_producer>
+        <sys_class_name>x_snc_dh_app_load_load_experience</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-11 23:50:04</sys_created_on>
+        <sys_id>ba4767361bebb81080a10ed2604bcb66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Legal Assist" source="x_snc_legal_assist">5e06db671b47a0106c42337cdc4bcbc2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</sys_scope>
+        <sys_update_name>x_snc_dh_app_load_load_experience_ba4767361bebb81080a10ed2604bcb66</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-11 23:50:04</sys_updated_on>
+        <unload_flow_last_updated/>
+        <unload_subflow/>
+        <unload_update_status>6</unload_update_status>
+    </x_snc_dh_app_load_load_experience>
+</record_update>

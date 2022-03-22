@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="Record producer for: null">fae109be871889109db5dc273cbb35ea</catalog_item>
+        <catalog_variable>load_experience_id</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-11 23:50:05</sys_created_on>
+        <sys_id>dfe1c9be871889109db5dc273cbb35fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Legal Assist" source="x_snc_legal_assist">5e06db671b47a0106c42337cdc4bcbc2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_dfe1c9be871889109db5dc273cbb35fc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-11 23:50:05</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Hide Load Experience ID">dfe1c9be871889109db5dc273cbb35c5</ui_policy>
+        <variable/>
+        <variable_set/>
+        <visible>false</visible>
+    </catalog_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</application>
+        <file_path/>
+        <instance_id>4c90a1171bc7a018c8432f8dee4bcbd3</instance_id>
+        <instance_name>appenginelegalassistantdemo</instance_name>
+        <name>catalog_ui_policy_action_dfe1c9be871889109db5dc273cbb35fc</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="Record producer for: null">fae109be871889109db5dc273cbb35ea</catalog_item><catalog_variable>load_experience_id</catalog_variable><cleared>false</cleared><disabled>ignore</disabled><field/><mandatory>ignore</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-12-11 23:50:05</sys_created_on><sys_id>dfe1c9be871889109db5dc273cbb35fc</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Legal Assist" source="x_snc_legal_assist">5e06db671b47a0106c42337cdc4bcbc2</sys_package><sys_policy/><sys_scope display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</sys_scope><sys_update_name>catalog_ui_policy_action_dfe1c9be871889109db5dc273cbb35fc</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-12-11 23:50:05</sys_updated_on><table/><ui_policy display_value="Hide Load Experience ID">dfe1c9be871889109db5dc273cbb35c5</ui_policy><variable/><variable_set/><visible>false</visible></catalog_ui_policy_action></record_update>]]></payload>
+        <payload_hash>-564772800</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>d206db671b47a0106c42337cdc4bcbc5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-11 23:50:05</sys_created_on>
+        <sys_id>9be10dbe871889109db5dc273cbb3500</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17dabe75bab0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-11 23:50:05</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>93e10dbed81889109cb8ff6094f0d000</update_guid>
+        <update_guid_history>93e10dbed81889109cb8ff6094f0d000:-564772800</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">afe10dbe871889109db5dc273cbb3539</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-11 23:50:06</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>8eb4da8b3f1947c29e1471e746422984</sys_id>
+        <sys_metadata>dfe1c9be871889109db5dc273cbb35fc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Legal Assist" source="x_snc_legal_assist">5e06db671b47a0106c42337cdc4bcbc2</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</sys_scope>
+        <sys_scope_delete display_value="">a92f9d1f20ad4ff1897d06ce7f79ee91</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_dfe1c9be871889109db5dc273cbb35fc</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_dfe1c9be871889109db5dc273cbb35fc">9be10dbe871889109db5dc273cbb3500</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-11 23:50:06</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

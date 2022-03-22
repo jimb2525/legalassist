@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>23a73dfd875cc110e339c956cebb3522</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2021-12-09 05:18:29</run_start>
+        <run_time/>
+        <run_type>once</run_type>
+        <script><![CDATA[var gr = new GlideRecord('x_snc_dh_app_load_load_experience');
+gr.addEncodedQuery('sys_idSTARTSWITH27ba0cde1bf3f810f62c65f2604bcb72^ORsys_idSTARTSWITH146a0f07873b3c10125fa7d73cbb353f^ORsys_idSTARTSWITHf628cf4687f37c509d8aa9373cbb3594');
+gr.query();
+while(gr.next()){
+    gr.deleteRecord();
+}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-09 05:18:29</sys_created_on>
+        <sys_id>60503a7987d005109db5dc273cbb3565</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>23a73dfd875cc110e339c956cebb3522</sys_name>
+        <sys_package display_value="Legal Assist" source="x_snc_legal_assist">5e06db671b47a0106c42337cdc4bcbc2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</sys_scope>
+        <sys_update_name>sysauto_script_60503a7987d005109db5dc273cbb3565</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-09 05:18:29</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

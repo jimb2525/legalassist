@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Catalog Item Page">d6fd6b63fac7a010791fb7d7ec63454b</macroponent>
+        <name>Related item page redirection</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    const {
+        state,
+        emit,
+        data
+    } = api;
+
+    if (state.relatedItemSysId) {
+        api.setState("relatedItemSysId", "");
+        emit('NAV_ITEM_SELECTED', {
+            route: "catalog",
+            fields: {
+                "sysId": data.look_up_record_1.result.related_sc_cat_item.value
+            }
+        });
+    }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2021-03-28 20:47:36</sys_created_on>
+        <sys_id>52fd6b63b0c7a0108fc8dd660102db3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Related item page redirection</sys_name>
+        <sys_package display_value="Legal Assist" source="x_snc_legal_assist">5e06db671b47a0106c42337cdc4bcbc2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</sys_scope>
+        <sys_update_name>sys_ux_client_script_52fd6b63b0c7a0108fc8dd660102db3d</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-03-28 20:47:36</sys_updated_on>
+    </sys_ux_client_script>
+</record_update>

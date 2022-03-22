@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>0286f17d875cc110e339c956cebb353d</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2021-12-11 23:21:28</run_start>
+        <run_time/>
+        <run_type>once</run_type>
+        <script><![CDATA[var gr = new GlideRecord('x_snc_dh_app_load_load_experience');
+gr.get('71be94e48767fc505bc1b846cebb3575');
+var table = 'x_snc_dh_app_load_load_experience';
+    var type = 'load';
+    var load_flow_id = gr.load_subflow+'';
+    var unload_flow_id = gr.unload_subflow+'';
+    var loadAppUtils = new global.DHAppUtils();
+    var is_load_invalid = loadAppUtils.validateVariables(load_flow_id);
+    var is_unload_invalid = loadAppUtils.validateVariables(unload_flow_id);
+    if(is_load_invalid == false && is_unload_invalid == false){
+            loadAppUtils.createRecordProducer(gr.sys_id+'', gr.scope, table, type);
+            loadAppUtils.syncLastUpdate(gr.sys_id+'', table, 'unload_subflow', 'unload_flow_last_updated');
+            loadAppUtils.syncLastUpdate(gr.sys_id+'', table, 'load_subflow', 'load_flow_last_updated');
+    }else{
+        gs.addErrorMessage("The record producer hasn't been created, there is an unsupported Variable Type in the selected Flow");
+    }]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-11 23:21:28</sys_created_on>
+        <sys_id>046b7cf2871489109db5dc273cbb35bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>0286f17d875cc110e339c956cebb353d</sys_name>
+        <sys_package display_value="Legal Assist" source="x_snc_legal_assist">5e06db671b47a0106c42337cdc4bcbc2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</sys_scope>
+        <sys_update_name>sysauto_script_046b7cf2871489109db5dc273cbb35bd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-11 23:21:28</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

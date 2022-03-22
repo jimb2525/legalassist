@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>b4c731b58758c1109db5dc273cbb35e1</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2021-12-12 21:58:13</run_start>
+        <run_time/>
+        <run_type>once</run_type>
+        <script><![CDATA[var gr = new GlideRecord('service_offering');
+{
+if(gr.get('5cf56f8cdbc7ff408606f2131f961918')) {
+ gr.setValue('offering_cost','570');
+}
+gr.update();
+
+if(gr.get('60f42b4cdbc7ff408606f2131f961967')) {
+ gr.setValue('offering_cost','746');
+}
+gr.update();
+
+if(gr.get('87b52f8cdbc7ff408606f2131f96194c')) {
+ gr.setValue('offering_cost','855');
+}
+gr.update();
+
+if(gr.get('9efcccaddb32f340ac0a9ee6db96197f')) {
+ gr.setValue('offering_cost','670');
+}
+gr.update();
+}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-12 21:58:13</sys_created_on>
+        <sys_id>eee1bd0b87548d109db5dc273cbb35dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>b4c731b58758c1109db5dc273cbb35e1</sys_name>
+        <sys_package display_value="Legal Assist" source="x_snc_legal_assist">5e06db671b47a0106c42337cdc4bcbc2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</sys_scope>
+        <sys_update_name>sysauto_script_eee1bd0b87548d109db5dc273cbb35dd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-12 21:58:13</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

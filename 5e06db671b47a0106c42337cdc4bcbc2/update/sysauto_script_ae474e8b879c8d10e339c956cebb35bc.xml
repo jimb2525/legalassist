@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>70a671758758c1109db5dc273cbb358e</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2021-12-12 23:31:38</run_start>
+        <run_time/>
+        <run_type>once</run_type>
+        <script><![CDATA[// PO script for auto mine project
+GlidePropertiesDB.set("promin.perf.mine_on_ccs", "false");
+GlidePropertiesDB.set("promin.perf.interactive_mine_on_ccs", "false");
+GlidePropertiesDB.set("promin.entitlement_check", "false");
+SNC.ProcessOptimization.scheduleMining("917471071ba164d0de61a86fe54bcbaa", false);]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-12 23:31:38</sys_created_on>
+        <sys_id>ae474e8b879c8d10e339c956cebb35bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>70a671758758c1109db5dc273cbb358e</sys_name>
+        <sys_package display_value="Legal Assist" source="x_snc_legal_assist">5e06db671b47a0106c42337cdc4bcbc2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</sys_scope>
+        <sys_update_name>sysauto_script_ae474e8b879c8d10e339c956cebb35bc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-12 23:31:38</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

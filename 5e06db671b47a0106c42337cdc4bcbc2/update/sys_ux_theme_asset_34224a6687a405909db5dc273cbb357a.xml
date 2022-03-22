@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_theme_asset">
+    <sys_ux_theme_asset action="INSERT_OR_UPDATE">
+        <category>image</category>
+        <name>MichaelBestLogo</name>
+        <sys_class_name>sys_ux_theme_asset</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-12-23 20:08:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>34224a6687a405909db5dc273cbb357a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>MichaelBestLogo</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Legal Assist" source="x_snc_legal_assist">5e06db671b47a0106c42337cdc4bcbc2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</sys_scope>
+        <sys_update_name>sys_ux_theme_asset_34224a6687a405909db5dc273cbb357a</sys_update_name>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-12-23 20:08:30</sys_updated_on>
+    </sys_ux_theme_asset>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#48576e</average_image_color>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <encryption_context/>
+        <file_name>Michael_Best_Logo.png</file_name>
+        <hash>343db09dd3fd9220a5a3c55205ad02f370c51de759b6c5284092a083359dd14c</hash>
+        <image_height>81</image_height>
+        <image_width>269</image_width>
+        <size_bytes>4327</size_bytes>
+        <size_compressed>4350</size_compressed>
+        <state>available</state>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-12-23 20:12:52</sys_created_on>
+        <sys_id>d6430ea687a405909db5dc273cbb355c</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-12-23 20:12:52</sys_updated_on>
+        <table_name>sys_ux_theme_asset</table_name>
+        <table_sys_id>34224a6687a405909db5dc273cbb357a</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="Michael_Best_Logo.png" sys_id="d6430ea687a405909db5dc273cbb355c">d6430ea687a405909db5dc273cbb355c</sys_attachment>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-12-23 20:12:52</sys_created_on>
+        <sys_id>96438ae687a405909db5dc273cbb3573</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>5788</length>
+        <position>1</position>
+        <sys_attachment display_value="Michael_Best_Logo.png" sys_id="d6430ea687a405909db5dc273cbb355c">d6430ea687a405909db5dc273cbb355c</sys_attachment>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-12-23 20:12:52</sys_created_on>
+        <sys_id>1a438ae687a405909db5dc273cbb3573</sys_id>
+    </sys_attachment_doc>
+</record_update>

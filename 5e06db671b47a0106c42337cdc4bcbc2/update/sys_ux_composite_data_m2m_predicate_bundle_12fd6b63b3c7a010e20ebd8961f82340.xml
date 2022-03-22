@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data_m2m_predicate_bundle">
+    <sys_ux_composite_data_m2m_predicate_bundle action="INSERT_OR_UPDATE">
+        <dataset display_value="Custom Portal Landing - Popular Articles">dafd6b6350c7a010358247e0b0d3ae3e</dataset>
+        <order/>
+        <predicate_bundle display_value="Popular articles bundle">52fd6b6392c7a0100d8cfe5748377240</predicate_bundle>
+        <sys_class_name>sys_ux_composite_data_m2m_predicate_bundle</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2021-03-28 20:47:37</sys_created_on>
+        <sys_id>12fd6b63b3c7a010e20ebd8961f82340</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Legal Assist" source="x_snc_legal_assist">5e06db671b47a0106c42337cdc4bcbc2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</sys_scope>
+        <sys_update_name>sys_ux_composite_data_m2m_predicate_bundle_12fd6b63b3c7a010e20ebd8961f82340</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-03-28 20:47:37</sys_updated_on>
+    </sys_ux_composite_data_m2m_predicate_bundle>
+</record_update>

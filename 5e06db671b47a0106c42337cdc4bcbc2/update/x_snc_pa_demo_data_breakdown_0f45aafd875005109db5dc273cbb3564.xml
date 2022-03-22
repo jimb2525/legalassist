@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_pa_demo_data_breakdown">
+    <x_snc_pa_demo_data_breakdown action="INSERT_OR_UPDATE">
+        <breakdown display_value="Page">ffdec94be71023008901268b03f6a9be</breakdown>
+        <generator display_value="Content Analytics.Daily Page Views">8f903fba1b268c1022fdeca9bc4bcb4f</generator>
+        <standard_deviations>2.2</standard_deviations>
+        <sys_class_name>x_snc_pa_demo_data_breakdown</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-09 04:30:19</sys_created_on>
+        <sys_id>0f45aafd875005109db5dc273cbb3564</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ffdec94be71023008901268b03f6a9be</sys_name>
+        <sys_package display_value="Legal Assist" source="x_snc_legal_assist">5e06db671b47a0106c42337cdc4bcbc2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</sys_scope>
+        <sys_update_name>x_snc_pa_demo_data_breakdown_0f45aafd875005109db5dc273cbb3564</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-09 04:30:19</sys_updated_on>
+    </x_snc_pa_demo_data_breakdown>
+</record_update>

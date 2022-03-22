@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types/>
+        <category>page</category>
+        <component_dependencies/>
+        <composition>[ {
+  "elementId" : "container_4",
+  "elementLabel" : "Container 4",
+  "propertyValues" : { },
+  "eventMappings" : [ ],
+  "slot" : "Main",
+  "definition" : {
+    "id" : "d356d14b6e293a3020a244b63d278d8f",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "composition" : [ ],
+    "layout" : {
+      "default" : {
+        "children" : null,
+        "items" : [{"slotName":"Main","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"column"}}],
+        "root" : null,
+        "rules" : {"flex-flow":"row nowrap","align-items":"stretch","height":"100%"},
+        "styles" : null,
+        "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+        "type" : "flex"
+      }
+    }
+  },
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "isNonDestructive" : false,
+  "styles" : {
+    "width" : "100%"
+  }
+}, {
+  "elementId" : "container_1",
+  "elementLabel" : "Container 1",
+  "propertyValues" : { },
+  "eventMappings" : [ ],
+  "slot" : "Main",
+  "definition" : {
+    "id" : "d356d14b6e293a3020a244b63d278d8f",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "composition" : [ {
+      "elementId" : "data_visualization_1",
+      "elementLabel" : "Data visualization 1",
+      "propertyValues" : {
+        "label" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        },
+        "chartType" : {
+          "type" : "JSON_LITERAL",
+          "value" : "pie"
+        },
+        "dataConfigurations" : {
+          "type" : "JSON_LITERAL",
+          "value" : "[{\"__viz_config_id\":\"dGFibGV4X3NuY19sZWdhbF9hc3Npc3Rfc3VwcG9ydF9yZXF1ZXN0MTY0MjQ0MDEwNDcwOQ==\",\"__viz_config_label\":\"Support Request\",\"aggregate_function\":\"COUNT\",\"group_by\":\"priority\",\"number_of_groups\":10,\"sort_order\":\"desc\",\"display_zero\":true,\"source_type\":\"table\",\"source_id\":\"x_snc_legal_assist_support_request\"}]"
+        },
+        "styleConfigurations" : {
+          "type" : "JSON_LITERAL",
+          "value" : "{\"width\":\"auto\",\"height\":\"auto\",\"showDataLabels\":false,\"seriesConfig\":{\"data_0_0\":{\"enableAbbreviation\":false}},\"dataLabelConfig\":{\"align\":\"middle\",\"collisions\":\"hide\",\"stacked\":\"individual\",\"valueType\":\"both\"},\"hideRegister\":false,\"registerConfig\":{\"legendOnly\":true},\"registerPosition\":\"bottom\"}"
+        },
+        "isRealtime" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "showRealtimeIndicator" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "variant" : {
+          "type" : "JSON_LITERAL",
+          "value" : "auto"
+        },
+        "border" : {
+          "type" : "JSON_LITERAL",
+          "value" : true
+        },
+        "refreshInterval" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        },
+        "kpiDetailsNavigation" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "followFilters" : {
+          "type" : "JSON_LITERAL",
+          "value" : true
+        },
+        "hideFiltersInfo" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "filterConfigurations" : {
+          "type" : "STATE_BINDING",
+          "binding" : {
+            "address" : [ "parFilters" ]
+          }
+        },
+        "hideHeader" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "refreshFrequency" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        }
+      },
+      "eventMappings" : [ ],
+      "slot" : "Column 1",
+      "definition" : {
+        "id" : "67cf18a377c70010cb834a2a6910619a",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : ""
+      },
+      "isNonDestructive" : false,
+      "styles" : { }
+    }, {
+      "elementId" : "data_visualization_2",
+      "elementLabel" : "Data visualization 2",
+      "propertyValues" : {
+        "label" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        },
+        "chartType" : {
+          "type" : "JSON_LITERAL",
+          "value" : "donut"
+        },
+        "dataConfigurations" : {
+          "type" : "JSON_LITERAL",
+          "value" : "[{\"__viz_config_id\":\"dGFibGV4X3NuY19sZWdhbF9hc3Npc3Rfc3VwcG9ydF9yZXF1ZXN0MTY0MjQ0MDI5OTI1Ng==\",\"__viz_config_label\":\"Support Request\",\"aggregate_function\":\"COUNT\",\"group_by\":\"state\",\"number_of_groups\":10,\"sort_order\":\"desc\",\"display_zero\":true,\"source_type\":\"table\",\"source_id\":\"x_snc_legal_assist_support_request\"}]"
+        },
+        "styleConfigurations" : {
+          "type" : "JSON_LITERAL",
+          "value" : "{\"width\":\"auto\",\"height\":\"auto\",\"showDataLabels\":false,\"seriesConfig\":{\"data_0_0\":{\"enableAbbreviation\":false}},\"dataLabelConfig\":{\"showTotal\":false,\"align\":\"middle\",\"collisions\":\"hide\",\"stacked\":\"individual\",\"valueType\":\"both\"},\"hideRegister\":false,\"registerConfig\":{\"legendOnly\":true},\"registerPosition\":\"bottom\"}"
+        },
+        "isRealtime" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "showRealtimeIndicator" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "variant" : {
+          "type" : "JSON_LITERAL",
+          "value" : "auto"
+        },
+        "border" : {
+          "type" : "JSON_LITERAL",
+          "value" : true
+        },
+        "refreshInterval" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        },
+        "kpiDetailsNavigation" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "followFilters" : {
+          "type" : "JSON_LITERAL",
+          "value" : true
+        },
+        "hideFiltersInfo" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "filterConfigurations" : {
+          "type" : "STATE_BINDING",
+          "binding" : {
+            "address" : [ "parFilters" ]
+          }
+        },
+        "hideHeader" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "refreshFrequency" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        }
+      },
+      "eventMappings" : [ ],
+      "slot" : "Column 2",
+      "definition" : {
+        "id" : "67cf18a377c70010cb834a2a6910619a",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : ""
+      },
+      "isNonDestructive" : false,
+      "styles" : { }
+    }, {
+      "elementId" : "data_visualization_3",
+      "elementLabel" : "Data visualization 3",
+      "propertyValues" : {
+        "label" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        },
+        "chartType" : {
+          "type" : "JSON_LITERAL",
+          "value" : "single_score"
+        },
+        "dataConfigurations" : {
+          "type" : "JSON_LITERAL",
+          "value" : "[{\"__viz_config_id\":\"dGFibGV4X3NuY19sZWdhbF9hc3Npc3Rfc3VwcG9ydF9yZXF1ZXN0MTY0MjQ0MDM3NDE2NA==\",\"__viz_config_label\":\"Support Request\",\"aggregate_function\":\"COUNT\",\"display_zero\":true,\"source_type\":\"table\",\"source_id\":\"x_snc_legal_assist_support_request\"}]"
+        },
+        "styleConfigurations" : {
+          "type" : "JSON_LITERAL",
+          "value" : "{\"width\":\"auto\",\"height\":\"auto\",\"showDataLabels\":false,\"seriesConfig\":{\"data_0_0\":{\"enableAbbreviation\":false}},\"dataLabelConfig\":{\"align\":\"middle\",\"collisions\":\"hide\",\"stacked\":\"individual\",\"valueType\":\"both\"}}"
+        },
+        "isRealtime" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "showRealtimeIndicator" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "variant" : {
+          "type" : "JSON_LITERAL",
+          "value" : "auto"
+        },
+        "border" : {
+          "type" : "JSON_LITERAL",
+          "value" : true
+        },
+        "refreshInterval" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        },
+        "kpiDetailsNavigation" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "followFilters" : {
+          "type" : "JSON_LITERAL",
+          "value" : true
+        },
+        "hideFiltersInfo" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "filterConfigurations" : {
+          "type" : "STATE_BINDING",
+          "binding" : {
+            "address" : [ "parFilters" ]
+          }
+        },
+        "hideHeader" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "refreshFrequency" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        }
+      },
+      "eventMappings" : [ ],
+      "slot" : "Column 3",
+      "definition" : {
+        "id" : "67cf18a377c70010cb834a2a6910619a",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : ""
+      },
+      "isNonDestructive" : false,
+      "styles" : { }
+    } ],
+    "layout" : {
+      "default" : {
+        "children" : null,
+        "items" : [{"slotName":"Column 1","rules":{"flex":"1","margin-right":"1rem"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Column 2","rules":{"flex":"1","margin-right":"1rem"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Column 3","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"column"}}],
+        "root" : null,
+        "rules" : {"flex-flow":"row nowrap","align-items":"stretch","height":"100%"},
+        "styles" : null,
+        "templateId" : "4105f10153071010e6bcddeeff7b121e",
+        "type" : "flex"
+      },
+      "version" : "2.0.0"
+    }
+  },
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "isNonDestructive" : false,
+  "styles" : {
+    "width" : "100%"
+  }
+}, {
+  "elementId" : "container_2",
+  "elementLabel" : "Container 2",
+  "propertyValues" : { },
+  "eventMappings" : [ ],
+  "slot" : "Main",
+  "definition" : {
+    "id" : "d356d14b6e293a3020a244b63d278d8f",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "composition" : [ ],
+    "layout" : {
+      "default" : {
+        "children" : null,
+        "items" : [{"slotName":"Column 1","rules":{"flex":"1","margin-right":"1rem"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Column 2","rules":{"flex":"1","margin-right":"1rem"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Column 3","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"column"}}],
+        "root" : null,
+        "rules" : {"flex-flow":"row nowrap","align-items":"stretch","height":"100%"},
+        "styles" : null,
+        "templateId" : "4105f10153071010e6bcddeeff7b121e",
+        "type" : "flex"
+      },
+      "version" : "2.0.0"
+    }
+  },
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "isNonDestructive" : false,
+  "styles" : {
+    "width" : "100%"
+  }
+}, {
+  "elementId" : "container_3",
+  "elementLabel" : "Container 3",
+  "propertyValues" : { },
+  "eventMappings" : [ ],
+  "slot" : "Main",
+  "definition" : {
+    "id" : "d356d14b6e293a3020a244b63d278d8f",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "composition" : [ ],
+    "layout" : {
+      "default" : {
+        "children" : null,
+        "items" : [{"slotName":"Main","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"column"}}],
+        "root" : null,
+        "rules" : {"flex-flow":"row nowrap","align-items":"stretch","height":"100%"},
+        "styles" : null,
+        "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+        "type" : "flex"
+      }
+    }
+  },
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "isNonDestructive" : false,
+  "styles" : {
+    "width" : "100%"
+  }
+} ]</composition>
+        <da_relay_models/>
+        <data>[ ]</data>
+        <dispatched_events/>
+        <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings>{ }</internal_event_mappings>
+        <layout>{
+  "default" : {
+    "children" : null,
+    "items" : [{"slotName":"Main","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"column"}}],
+    "root" : null,
+    "rules" : {"flex-flow":"row nowrap","align-items":"stretch","min-height":"400px","height":"100%"},
+    "styles" : null,
+    "templateId" : "28bde4cd53431010e6bcddeeff7b12cc",
+    "type" : "flex"
+  }
+}</layout>
+        <macroponent_dependencies/>
+        <name>Legal Assist Dashboard</name>
+        <props>[ ]</props>
+        <required_translations>[ ]</required_translations>
+        <root_component/>
+        <root_component_config>{ }</root_component_config>
+        <root_component_definition/>
+        <schema_version>1.0.0</schema_version>
+        <state_properties>[ ]</state_properties>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2022-01-17 17:19:12</sys_created_on>
+        <sys_id>4e4bc6e6874145549db5dc273cbb358d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Legal Assist Dashboard</sys_name>
+        <sys_package display_value="Legal Assist" source="x_snc_legal_assist">5e06db671b47a0106c42337cdc4bcbc2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</sys_scope>
+        <sys_update_name>sys_ux_macroponent_4e4bc6e6874145549db5dc273cbb358d</sys_update_name>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2022-01-17 17:42:13</sys_updated_on>
+    </sys_ux_macroponent>
+</record_update>

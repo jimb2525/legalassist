@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>5437b5fd875cc110e339c956cebb3507</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2021-12-12 17:12:58</run_start>
+        <run_time/>
+        <run_type>once</run_type>
+        <script><![CDATA[var startDate  =  new GlideDateTime(gs.beginningOfLastMonth());
+var endDate    =  new GlideDateTime(gs.endOfLastMonth());
+
+var dates = [];
+
+
+for(var i = 0; i < 1; i++) {
+	endDate = new GlideDateTime(startDate);
+	endDate.setDayOfMonthUTC(startDate.getDaysInMonthUTC());
+	dates.push({start: startDate.getDate().getValue(), end: endDate.getDate().getValue()});
+	startDate.addMonthsUTC(-1);
+}
+
+var breakdownMap = {
+	sn_bm_common_industry: '53a08d31775323000f7a72f9691061eb',
+	sn_bm_common_size_bucket: '0af48d31775323000f7a72f9691061d6',
+	sn_bm_client_region: '0af48d31775323000f7a72f9691061d6',
+	sn_bm_client_msp: '65f5c5b1775323000f7a72f969106158'
+};
+
+var booleanBreakdowns = ['sn_bm_client_msp'];
+
+
+var ranges = {
+
+	/** Jakarta KPIs **/
+	'cc11221ad730320039b8ef44de6103d5': {'low': 5,'high': 8},
+	'559ba2223b603200b90c4bb534efc47b': {'low': 1,'high': 3},
+	'52b48bc26732220097eeff5557415aca': {'low': 2,'high': 5},
+	'1c5daa223b603200b90c4bb534efc4ae': {'low': 2,'high': 5},
+	'24a289c56703220097eeff5557415a8a': {'low': 60,'high': 70},
+	'7de43616d770320039b8ef44de61038d': {'low': 4,'high': 10},
+	'cc5aaaee3b203200b90c4bb534efc497': {'low': 80,'high': 95},
+	'8c74b216d770320039b8ef44de6103b1': {'low': 5,'high': 10},
+	'e03c66223b603200b90c4bb534efc48e': {'low': 12,'high': 18},
+	'9eed2e223b603200b90c4bb534efc4d2': {'low': 6,'high': 12},
+	'e0d279be6753220097eeff5557415a1a': {'low': 24,'high': 48},
+	'0391c5c56703220097eeff5557415a00': {'low': 4,'high': 12},
+	'682283c26732220097eeff5557415a58': {'low': 6,'high': 24},
+	'ffe24c976701320097eeff5557415aab': {'low': 2,'high': 10},
+	'66f279be6753220097eeff5557415abb': {'low': 10,'high': 20},
+	'8213ea0c6711320097eeff5557415a63': {'low': 2,'high': 5},
+	'60d705f03bf30300f522097734efc4bb': {'low': 4, 'high': 10},
+	'81490df03bf30300f522097734efc4c8': {'low': 4, 'high': 10},
+
+	/** Kingston KPIs **/
+	'2ffa098e539003000d620d0323dc3466': {'low': 2, 'high': 10},
+	'a177f63b531003000d620d0323dc3418': {'low': 2, 'high': 10},
+	'21707ff3535003000d620d0323dc340c': {'low': 2, 'high': 10},
+	'5047055a531003000d620d0323dc34a5': {'low': 2, 'high': 10},
+	'7ce7d7aa539003000d620d0323dc3403': {'low': 2, 'high': 10},
+	'a200f00b539403000d620d0323dc3460': {'low': 2, 'high': 10},
+	'ee6d8347536003000d620d0323dc34db': {'low': 2, 'high': 100}
+
+};
+
+function getIds(table) {
+	var result = [];
+	var gr = new GlideRecord(table);
+	gr.query();
+	while (gr.next()) {
+	    result.push(gr.sys_id + '');
+	}
+	return result;
+}
+
+function insertScore(date, indicator, score, isGlobal, rank, breakdown, element) {
+	var gr = new GlideRecord('sn_bm_client_score');
+	gr.initialize();
+	gr.indicator           =  indicator;
+	gr.start_date          =  date.start;
+	gr.end_date            =  date.end;
+	gr.breakdown_reference =  breakdownMap[breakdown];
+	
+	if (booleanBreakdowns.indexOf(breakdown) >= 0) {
+		gr.breakdown_type  =  'boolean';
+		gr.bool_element    =  element;
+	}
+	else if (!gs.nil(breakdown)) {
+		gr.breakdown_type  =  'reference';
+		gr.breakdown_table =  breakdown;
+		gr.element         =  element;
+	}
+
+	gr.mean_value          =  Math.abs(score);
+	gr.global              =  isGlobal;
+	gr.percentile_rank     =  rank;
+	gr.insert();
+}
+
+function updateClientConf(name, value) {
+	var configGR = new GlideRecord('sn_bm_client_configuration');
+	configGR.addQuery('name', name);
+	configGR.query();
+	configGR.next();
+	configGR.setValue('value', value);
+	configGR.update();
+}
+
+function getClientConf(name) {
+	var configGR = new GlideRecord('sn_bm_client_configuration');
+	configGR.addQuery('name', name);
+	configGR.query();
+	configGR.next();
+	return configGR.getValue('value');
+}
+
+
+var configGR = new GlideRecord('sn_bm_client_configuration');
+configGR.addQuery('name', 'opt_in_status');
+configGR.query();
+configGR.next();
+configGR.setValue('value', 'true');
+configGR.update();
+
+
+
+var myIndustry = getClientConf('sn_bm_common_industry');
+var mySizeBucket = getClientConf('sn_bm_common_size_bucket');
+var myRegion = getClientConf('sn_bm_client_region');
+var amMSP = (getClientConf('sn_bm_client_msp') === '1');
+updateClientConf('opt_in_status', true);
+
+
+
+
+dates.forEach(function(date) {
+
+	var indicators   =  getIds('sn_bm_common_indicator');
+	var industries   =  getIds('sn_bm_common_industry');
+	var sizeBuckets  =  getIds('sn_bm_common_size_bucket');
+	var regions		 =  getIds('sn_bm_client_region');
+
+	indicators.forEach(function(indicator) {
+		var low = 50, high = 200;
+
+		if(indicator in ranges){
+			low = ranges[indicator].low;
+			high = ranges[indicator].high;
+		}
+
+		var base  = high - low;
+		var score = low + parseInt(Math.random() * base);
+
+		var rank = 90 + parseInt(Math.random() * 10);
+ 
+		// Local score
+		insertScore(date, indicator, score, false);
+
+		// Global score
+		insertScore(date, indicator, low + parseInt(Math.random() * base), true,  rank);
+
+		// Industry breakdowns
+		industries.forEach(function(industry) {
+			var bdScore = low + parseInt(Math.random() * base);
+			rank = '';
+			if(industry == myIndustry)
+				rank = 90 + parseInt(Math.random() * 10);
+			insertScore(date, indicator, bdScore, true, rank, 'sn_bm_common_industry', industry);
+		});
+
+		// Size Bucket breakdowns
+		sizeBuckets.forEach(function(sizeBucket) {
+			var bdScore = low + parseInt(Math.random() * base);
+			rank = '';
+			if(sizeBucket == mySizeBucket)
+				rank = 90 + parseInt(Math.random() * 10);
+			insertScore(date, indicator, bdScore, true, rank, 'sn_bm_common_size_bucket', sizeBucket);
+		});
+
+		// Industry breakdowns
+		regions.forEach(function(region) {
+			var bdScore = low + parseInt(Math.random() * base);
+			rank = '';
+			if(region == myRegion)
+				rank = 90 + parseInt(Math.random() * 10);
+			insertScore(date, indicator, bdScore, true, rank, 'sn_bm_client_region', region);
+		});
+		
+		//MSP breakdown
+		if(amMSP) {
+			var bdScore = low + parseInt(Math.random() * base);
+			rank = 90 + parseInt(Math.random() * 10);
+			insertScore(date, indicator, bdScore, true, rank, 'sn_bm_client_msp', true);
+		}
+
+	});
+
+});
+
+var lastMonth = new GlideDateTime(gs.beginningOfLastMonth());
+var gr = new GlideRecord('sn_bm_client_activity');
+gr.initialize();
+gr.setValue('date', lastMonth.getDate());
+gr.setValue('type', 'download');
+gr.insert();
+]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-12 17:12:58</sys_created_on>
+        <sys_id>3790700787dc4d109db5dc273cbb3592</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>5437b5fd875cc110e339c956cebb3507</sys_name>
+        <sys_package display_value="Legal Assist" source="x_snc_legal_assist">5e06db671b47a0106c42337cdc4bcbc2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</sys_scope>
+        <sys_update_name>sysauto_script_3790700787dc4d109db5dc273cbb3592</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-12 17:12:58</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

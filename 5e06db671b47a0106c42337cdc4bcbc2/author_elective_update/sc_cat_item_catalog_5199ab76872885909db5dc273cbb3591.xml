@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="DELETE">
+        <sc_cat_item display_value="Legal Request">f0d073671bc7a0106c42337cdc4bcb48</sc_cat_item>
+        <sc_catalog display_value="Firm Operations">a20eb6cb87d4cd10e339c956cebb353d</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-12-24 22:18:17</sys_created_on>
+        <sys_id>5199ab76872885909db5dc273cbb3591</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Firm Operations.Legal Request</sys_name>
+        <sys_package display_value="Legal Assist" source="x_snc_legal_assist">5e06db671b47a0106c42337cdc4bcbc2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_5199ab76872885909db5dc273cbb3591</sys_update_name>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-12-24 22:18:17</sys_updated_on>
+    </sc_cat_item_catalog>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</application>
+        <file_path/>
+        <instance_id>4c90a1171bc7a018c8432f8dee4bcbd3</instance_id>
+        <instance_name>appenginelegalassistantdemo</instance_name>
+        <name>sc_cat_item_catalog_5199ab76872885909db5dc273cbb3591</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="Legal Request">f0d073671bc7a0106c42337cdc4bcb48</sc_cat_item><sc_catalog display_value="Firm Operations">a20eb6cb87d4cd10e339c956cebb353d</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>james.belote</sys_created_by><sys_created_on>2021-12-24 22:18:17</sys_created_on><sys_id>5199ab76872885909db5dc273cbb3591</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Firm Operations.Legal Request</sys_name><sys_package display_value="Legal Assist" source="x_snc_legal_assist">5e06db671b47a0106c42337cdc4bcbc2</sys_package><sys_policy/><sys_scope display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</sys_scope><sys_update_name>sc_cat_item_catalog_5199ab76872885909db5dc273cbb3591</sys_update_name><sys_updated_by>james.belote</sys_updated_by><sys_updated_on>2021-12-24 22:18:17</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
+        <payload_hash>64876205</payload_hash>
+        <record_name>Firm Operations.Legal Request</record_name>
+        <reverted_from/>
+        <source>d206db671b47a0106c42337cdc4bcbc5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-12-24 22:18:17</sys_created_on>
+        <sys_id>5999ab76872885909db5dc273cbb3597</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17dee85f8850000001</sys_recorded_at>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-12-24 22:18:17</sys_updated_on>
+        <type>Catalog Items Catalog</type>
+        <update_guid>9d99ab76f5288590164418e1f55bf696</update_guid>
+        <update_guid_history>9d99ab76f5288590164418e1f55bf696:64876205</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Firm Operations.Legal Request">54a9eb76872885909db5dc273cbb35d3</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-12-24 22:18:30</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
+        <sys_id>183abf7f88ac44d08e0af5bce0c35224</sys_id>
+        <sys_metadata>5199ab76872885909db5dc273cbb3591</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Firm Operations.Legal Request</sys_name>
+        <sys_package display_value="Legal Assist" source="x_snc_legal_assist">5e06db671b47a0106c42337cdc4bcbc2</sys_package>
+        <sys_parent display_value="Legal Request">f0d073671bc7a0106c42337cdc4bcb48</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</sys_scope>
+        <sys_scope_delete display_value="">a92f9d1f20ad4ff1897d06ce7f79ee91</sys_scope_delete>
+        <sys_update_name>sc_cat_item_catalog_5199ab76872885909db5dc273cbb3591</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_catalog_5199ab76872885909db5dc273cbb3591">5999ab76872885909db5dc273cbb3597</sys_update_version>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-12-24 22:18:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="Support Request" max_length="40" name="x_snc_legal_assist_support_request" sizeclass="11" type="collection">
+        <element choice="1" label="Category" max_length="40" name="category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Client Billing Inquiries" sequence="10" value="client_billing_inquiries"/>
+                <element inactive_on_update="false" label="Mail/Fax/Email" sequence="20" value="mail_fax_email"/>
+                <element inactive_on_update="false" label="Mentoring" sequence="30" value="mentoring"/>
+                <element inactive_on_update="false" label="Notary" sequence="40" value="notary"/>
+                <element inactive_on_update="false" label="Print/Photocopy/Scan" sequence="50" value="print_photocopy_scan"/>
+                <element inactive_on_update="false" label="Document Processing" sequence="60" value="document_processing"/>
+                <element inactive_on_update="false" label="General Finance Dept Inquiries" sequence="70" value="general_finance_dept_inquiries"/>
+                <element inactive_on_update="false" label="Office Service Request" sequence="80" value="office_service_request"/>
+                <element inactive_on_update="false" label="Technology Request" sequence="90" value="technology_request"/>
+            </choice>
+        </element>
+        <element choice="1" label="Channel" max_length="40" name="channel" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Email" sequence="10" value="email"/>
+                <element inactive_on_update="false" label="Service Portal" sequence="20" value="service_portal"/>
+                <element inactive_on_update="false" label="Walk Up" sequence="30" value="walk_up"/>
+                <element inactive_on_update="false" label="Phone" sequence="40" value="phone"/>
+                <element inactive_on_update="false" label="Manual Entry" sequence="50" value="manual_entry"/>
+            </choice>
+        </element>
+        <element choice="1" label="Department Referral" max_length="40" name="department_referral" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="DPS" sequence="10" value="dps"/>
+                <element inactive_on_update="false" label="BDEV" sequence="20" value="bdev"/>
+                <element inactive_on_update="false" label="Finance" sequence="30" value="finance"/>
+                <element inactive_on_update="false" label="IT" sequence="40" value="it"/>
+                <element inactive_on_update="false" label="Talent Management" sequence="50" value="talent_management"/>
+            </choice>
+        </element>
+        <element label="Support Requestor" max_length="32" name="support_requestor" reference="sys_user" type="reference"/>
+    </element>
+</database>

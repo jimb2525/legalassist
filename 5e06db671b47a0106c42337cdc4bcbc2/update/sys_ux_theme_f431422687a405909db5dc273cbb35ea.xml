@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_theme">
+    <sys_ux_theme action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <name>MB Theme</name>
+        <parent display_value="Starter Workspace Theme">125ea7a364c7a0107d9ed7d4d9745a3f</parent>
+        <sys_class_name>sys_ux_theme</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-12-23 20:05:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f431422687a405909db5dc273cbb35ea</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_name>MB Theme</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Legal Assist" source="x_snc_legal_assist">5e06db671b47a0106c42337cdc4bcbc2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</sys_scope>
+        <sys_update_name>sys_ux_theme_f431422687a405909db5dc273cbb35ea</sys_update_name>
+        <sys_updated_by>dan.munk</sys_updated_by>
+        <sys_updated_on>2022-01-19 16:56:41</sys_updated_on>
+        <theme>{&#13;
+  "--now-font-family": "Open Sans, sans-serif",&#13;
+  "--now-button--border-radius": "25px",&#13;
+  "--now-button--primary--background-color": "60,16,83",&#13;
+  "--now-button--primary--border-color": "60,16,83",&#13;
+  "--now-button--primary--background-color--hover": "76,86,106",&#13;
+  "--now-button--secondary--background-color": "255,255,255",&#13;
+  "--now-button--secondary--border-color": "0,48,89",&#13;
+  "--now-button--secondary--border-color--hover": "2px",&#13;
+  "--now-button--secondary--background-color--hover": "136,192,208",&#13;
+  "--now-button--tertiary--background-color": "255,255,255",&#13;
+  "--now-button--tertiary--border-color": "0,48,89",&#13;
+  "--now-button--tertiary--border-color--hover": "2px",&#13;
+  "--now-button--tertiary--background-color--hover": "229,233,240",&#13;
+  "--now-color--neutral-4": "229,233,240",&#13;
+  "--now-color--neutral-5": "229,233,240",&#13;
+  "--now-color--secondary-1": "136,192,208",&#13;
+  "--now-color--primary-0": "216,222,233",&#13;
+  "--now-color--primary-1": "76,86,106",&#13;
+  "--now-color--primary-2": "0,48,89",&#13;
+  "--now-canvas-header-container-ws--background-color": "255,255,255",&#13;
+  "--now-tabs--background-color": "216,222,233",&#13;
+  "--now-tabs--border-color": "0,0,0",&#13;
+  "--now-color--neutral-2": "246,247,247",&#13;
+  "canvas-toolbar--background-color": "19,122,191",&#13;
+  "canvas-toolbar-button--background-color--focus": "60,16,83",&#13;
+  "canvas-toolbar-button--background-color": "60,16,83",&#13;
+  "now-color--neutral-7": "160,160,160",&#13;
+  "--now-tabs--border-left-radius": "0px",&#13;
+  "now-color--primary-1": "0,0,0",&#13;
+  "--now-split-button_divider--width": "0px",&#13;
+  "sn-filter-panel-button-md--border-color": "255,255,255",&#13;
+  "--now-color--secondary-0": "209,217,223",&#13;
+  "--now-heading--header-primary--font-family": "Open Sans",&#13;
+  "--now-heading--header-primary--font-weight": "700",&#13;
+  "--now-color--neutral-1": "255,255,255",&#13;
+  "--now-canvas-nav-item--default--color": "--now-color--neutral-4",&#13;
+  "--now-canvas-nav-item--default--color--hover": "--now-color--neutral-4",&#13;
+  "--now-canvas-nav-item--default--color--active": "--now-color--neutral-4",&#13;
+  "--now-line-height-crop--before": "-0.2125em",&#13;
+  "--now-line-height-crop--after": "-0.275em",&#13;
+  "--now-badge--secondary_low--background-color": "217,217,217",&#13;
+  "--now-color_alert--critical-0": "213,151,157",&#13;
+  "--now-color_alert--positive-0": "189,208,173",&#13;
+  "--now-color_alert--high-0": "239,213,161",&#13;
+  "--now-color_alert--low-0": "216,222,233",&#13;
+  "--now-color_alert--info-0": "146,174,201",&#13;
+  "--now-color--secondary-2": "76,86,106",&#13;
+  "--mv9-Jrmsr1-8trptZ-jvfv--18vZz--8tAf8z": "2.2rem"&#13;
+}</theme>
+    </sys_ux_theme>
+</record_update>

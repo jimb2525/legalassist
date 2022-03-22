@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>b0c731b58758c1109db5dc273cbb35e1</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2021-12-12 21:58:03</run_start>
+        <run_time/>
+        <run_type>once</run_type>
+        <script><![CDATA[/*
+Created By: Deba C
+Created On: Aug 20, 2020
+Description: Script is to associate commitments to service offerings
+*/
+
+var commitments = [{id:'505de57c0a0a0b6100e964d67f8fa089', order:'100'}, //98% Availability 24X7, P1 Resolution 1hr 24x7 (90%)
+                {id:'79571781c0a8016700fd1d03f356a45d', order:'200'}];
+
+//var queryString = "parent=c5948f571b95009025369607bc4bcb6f^portfolio_status=catalog^service_status=operational"; //parent=Email Services
+var queryString = "parent=57ed1b00dbc7ff408606f2131f96194f^ORparent=df43e4d1db550810f772c24505961945^ORparent=0d5a23d71b19009025369607bc4bcb3c^ORparent=c5948f571b95009025369607bc4bcb6f^portfolio_status=catalog^service_status=operational";
+
+var offeringGR = new GlideRecord("service_offering");
+offeringGR.addEncodedQuery(queryString);
+offeringGR.query();
+
+while(offeringGR.next()) {
+    gs.info('Service Offering: ' + offeringGR.getValue('name'));
+    gs.info("Sys ID: " + offeringGR.getUniqueValue());
+
+    for(j=0;j<commitments.length;j++) {
+    var data = commitments[j];
+    var x = new GlideRecord("service_offering_commitment");
+    //check if entry akready exist
+    x.addQuery('service_offering',offeringGR.sys_id);
+    x.addQuery('service_commitment',data.id);
+    x.query();
+    if(x.getRowCount()<=0)
+    {
+        x.initialize();
+    x.setValue("service_offering", offeringGR.sys_id);
+    x.setValue("service_commitment", data.id);
+    x.setValue("order", data.order);
+    //if (offeringGR.name == 'Rewards Offering'){
+    x.setValue("primary","true");
+    //}
+    //else{
+    //x.setValue("primary","true");   
+   // }
+    x.insert();
+    } // end of if
+    else {
+        gs.info("Not creating Commitments");
+    }
+    }
+ 
+}
+
+gs.info('Script Ends Here !!');
+
+
+]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-12 21:58:03</sys_created_on>
+        <sys_id>27d13d0787548d10e339c956cebb3543</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>b0c731b58758c1109db5dc273cbb35e1</sys_name>
+        <sys_package display_value="Legal Assist" source="x_snc_legal_assist">5e06db671b47a0106c42337cdc4bcbc2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</sys_scope>
+        <sys_update_name>sysauto_script_27d13d0787548d10e339c956cebb3543</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-12 21:58:03</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

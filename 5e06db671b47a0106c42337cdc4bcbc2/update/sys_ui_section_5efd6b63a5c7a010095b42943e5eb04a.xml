@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="5efd6b63a5c7a010095b42943e5eb04a" sys_domain="global" table="sysapproval_approver" version="3" view="custom_portal_approval_x_snc_legal_assist">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>comments</element>
+            <position>0</position>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2021-03-28 20:47:35</sys_created_on>
+            <sys_id>52fd6b630ec7a010efab2e22d8d3b84b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sysapproval_approver" sys_domain="global" view="9efd6b63dec7a010896620aa2c47454a">5efd6b63a5c7a010095b42943e5eb04a</sys_ui_section>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2021-03-28 20:47:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sysapproval</element>
+            <position>1</position>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2021-03-28 20:47:35</sys_created_on>
+            <sys_id>92fd6b6366c7a0103454721ca4ab314b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sysapproval_approver" sys_domain="global" view="9efd6b63dec7a010896620aa2c47454a">5efd6b63a5c7a010095b42943e5eb04a</sys_ui_section>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2021-03-28 20:47:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>sysapproval_approver</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2021-03-28 20:47:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5efd6b63a5c7a010095b42943e5eb04a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sysapproval_approver</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Legal Assist" source="x_snc_legal_assist">5e06db671b47a0106c42337cdc4bcbc2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</sys_scope>
+            <sys_update_name>sys_ui_section_5efd6b63a5c7a010095b42943e5eb04a</sys_update_name>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2021-03-28 20:47:35</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Custom portal (x_snc_legal_assist )" name="custom_portal_approval_x_snc_legal_assist">9efd6b63dec7a010896620aa2c47454a</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

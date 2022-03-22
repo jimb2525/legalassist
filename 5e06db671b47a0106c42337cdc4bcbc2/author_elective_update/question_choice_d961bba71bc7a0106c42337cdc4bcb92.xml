@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="DELETE">
+        <inactive>false</inactive>
+        <order>1</order>
+        <published_ref display_value="Client Billing Inquiries">41d0fb671bc7a0106c42337cdc4bcba7</published_ref>
+        <question display_value="Category">9d61bba71bc7a0106c42337cdc4bcb89</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-28 21:02:32</sys_created_on>
+        <sys_id>d961bba71bc7a0106c42337cdc4bcb92</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Client Billing Inquiries</sys_name>
+        <sys_package display_value="Legal Assist" source="x_snc_legal_assist">5e06db671b47a0106c42337cdc4bcbc2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</sys_scope>
+        <sys_update_name>question_choice_d961bba71bc7a0106c42337cdc4bcb92</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-28 21:02:32</sys_updated_on>
+        <text>Client Billing Inquiries</text>
+        <value>client_billing_inquiries</value>
+    </question_choice>
+    <fx_price action="DELETE" query="id=d961bba71bc7a0106c42337cdc4bcb92"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</application>
+        <file_path/>
+        <instance_id>4c90a1171bc7a018c8432f8dee4bcbd3</instance_id>
+        <instance_name>appenginelegalassistantdemo</instance_name>
+        <name>question_choice_d961bba71bc7a0106c42337cdc4bcb92</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice"><question_choice action="INSERT_OR_UPDATE"><inactive>false</inactive><order>1</order><published_ref display_value="Client Billing Inquiries">41d0fb671bc7a0106c42337cdc4bcba7</published_ref><question display_value="Category">9d61bba71bc7a0106c42337cdc4bcb89</question><sys_class_name>question_choice</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-28 21:02:32</sys_created_on><sys_id>d961bba71bc7a0106c42337cdc4bcb92</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Client Billing Inquiries</sys_name><sys_package display_value="Legal Assist" source="x_snc_legal_assist">5e06db671b47a0106c42337cdc4bcbc2</sys_package><sys_policy/><sys_scope display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</sys_scope><sys_update_name>question_choice_d961bba71bc7a0106c42337cdc4bcb92</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-28 21:02:32</sys_updated_on><text>Client Billing Inquiries</text><value>client_billing_inquiries</value></question_choice><fx_price action="delete_multiple" query="id=d961bba71bc7a0106c42337cdc4bcb92"/></record_update>]]></payload>
+        <payload_hash>-461609505</payload_hash>
+        <record_name>Client Billing Inquiries</record_name>
+        <reverted_from/>
+        <source>d206db671b47a0106c42337cdc4bcbc5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-28 21:02:32</sys_created_on>
+        <sys_id>5161bba71bc7a0106c42337cdc4bcb95</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1787aa53c360000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-28 21:02:32</sys_updated_on>
+        <type>Question Choice</type>
+        <update_guid>9561bba766c7a010ebdd795340935094</update_guid>
+        <update_guid_history>9561bba766c7a010ebdd795340935094:-461609505</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Client Billing Inquiries">cd42f7671b8fa010500c0d01cd4bcb11</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2021-03-28 21:06:20</sys_created_on>
+        <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
+        <sys_id>44869f4800e6461a8db107583818df71</sys_id>
+        <sys_metadata>d961bba71bc7a0106c42337cdc4bcb92</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Client Billing Inquiries</sys_name>
+        <sys_package display_value="Legal Assist" source="x_snc_legal_assist">5e06db671b47a0106c42337cdc4bcbc2</sys_package>
+        <sys_parent display_value="">9d61bba71bc7a0106c42337cdc4bcb89</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</sys_scope>
+        <sys_scope_delete display_value="">a92f9d1f20ad4ff1897d06ce7f79ee91</sys_scope_delete>
+        <sys_update_name>question_choice_d961bba71bc7a0106c42337cdc4bcb92</sys_update_name>
+        <sys_update_version display_value="question_choice_d961bba71bc7a0106c42337cdc4bcb92">5161bba71bc7a0106c42337cdc4bcb95</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-03-28 21:06:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

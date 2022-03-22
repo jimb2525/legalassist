@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>63b6f1758758c1109db5dc273cbb350e</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2021-12-09 04:47:44</run_start>
+        <run_time/>
+        <run_type>once</run_type>
+        <script><![CDATA[initializeVersions();
+populateSummaryFromArticle('kb_feedback','article_summary','article');
+
+// Uncomment following line to populate kb_use synchronously
+// populateSummaryFromArticle('kb_use','article_summary','article');
+
+// Let's start the async job to populate kb_use table with the summary field
+startAsyncPopulateSummaryForUse();
+
+function initializeVersions(){
+	var helper = new SNC.KnowledgeHelper();
+	var count = helper.initializeVersions();
+	gs.log("Initialized versions for " + count + " articles");
+}
+
+function startAsyncPopulateSummaryForUse(){
+	var rec = new GlideRecord('sysauto_script');
+	rec.get('name', 'Populate Summary field on Knowledge Use');
+	SncTriggerSynchronizer.executeNow(rec);
+}
+
+function populateSummaryFromArticle(table, summaryField, articleField) {
+
+    var gr = new GlideAggregate(table);
+    gr.addNullQuery(summaryField);
+    gr.addNotNullQuery(articleField);
+    gr.groupBy(articleField);
+    gr.query();
+    while (gr.next()) {
+        var summary = gr.getElement(articleField).getRefRecord();
+        if (summary.summary) {
+            updateAllWithSummary(gr.getValue(articleField), summary.summary);
+        }
+    }
+
+    function updateAllWithSummary(sysId, summaryId) {
+        var gr = new GlideMultipleUpdate(table);
+        gr.addQuery(articleField, sysId);
+        gr.query();
+        gr.setValue(summaryField, summaryId);
+        gr.execute();
+    }
+}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-09 04:47:44</sys_created_on>
+        <sys_id>82496ebd87dc0510e339c956cebb353f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>63b6f1758758c1109db5dc273cbb350e</sys_name>
+        <sys_package display_value="Legal Assist" source="x_snc_legal_assist">5e06db671b47a0106c42337cdc4bcbc2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</sys_scope>
+        <sys_update_name>sysauto_script_82496ebd87dc0510e339c956cebb353f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-09 04:47:44</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

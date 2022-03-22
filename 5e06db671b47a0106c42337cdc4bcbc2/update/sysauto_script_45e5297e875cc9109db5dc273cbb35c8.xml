@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>5387b9fd875cc110e339c956cebb35a9</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2021-12-12 02:27:13</run_start>
+        <run_time/>
+        <run_type>once</run_type>
+        <script><![CDATA[var gr = new GlideRecord('pm_project');
+    gr.addEncodedQuery('short_description=Acme New Hire Surveys');
+    gr.query();
+
+    while (gr.next()) {
+        var plannedStartDate = new GlideDateTime(gr.getValue('start_date'));
+        var plannedEndDate = new GlideDateTime(gr.getValue('end_date'));
+        var actualStartDate = new GlideDateTime(gr.getValue('work_start'));
+        var actualEndDate = new GlideDateTime(gr.getValue('work_end'));
+        var scheduleStartDate = new GlideDateTime(gr.getValue('schedule_start_date'));
+        var scheduleEndDate = new GlideDateTime(gr.getValue('schedule_end_date'));
+        var approvedStartDate = new GlideDateTime(gr.getValue('approved_start_date'));
+        var approvedEndDate = new GlideDateTime(gr.getValue('approved_end_date'));
+        
+        plannedStartDate.addYearsLocalTime(1);
+        plannedEndDate.addYearsLocalTime(1);
+        actualStartDate.addYearsLocalTime(1);
+        actualEndDate.addYearsLocalTime(1);
+        scheduleStartDate.addYearsLocalTime(1);
+        scheduleEndDate.addYearsLocalTime(1);
+        approvedStartDate.addYearsLocalTime(1);
+        approvedEndDate.addYearsLocalTime(1);
+
+        gr.start_date = plannedStartDate;
+        gr.end_date = plannedEndDate;
+        gr.work_start = actualStartDate;
+        gr.work_end = actualEndDate;
+        gr.schedule_start_date = scheduleStartDate;
+        gr.schedule_end_date = scheduleEndDate;
+        gr.approved_start_date = approvedStartDate;
+        gr.approved_end_date = approvedEndDate;
+        gr.setWorkflow(false);
+        gs.print('Updated dates for : ' + gr.short_description);
+        gr.update();
+    }
+
+    var gr = new GlideRecord('pm_project_task');
+    gr.addEncodedQuery('top_task.short_description=Acme New Hire Surveys');
+    gr.query();
+
+    while (gr.next()) {
+        var plannedStartDate = new GlideDateTime(gr.getValue('start_date'));
+        var plannedEndDate = new GlideDateTime(gr.getValue('end_date'));
+        var actualStartDate = new GlideDateTime(gr.getValue('work_start'));
+        var actualEndDate = new GlideDateTime(gr.getValue('work_end'));
+        var scheduleStartDate = new GlideDateTime(gr.getValue('schedule_start_date'));
+        var scheduleEndDate = new GlideDateTime(gr.getValue('schedule_end_date'));
+        var constraintDate = new GlideDateTime(gr.getValue('constraint_date'));
+
+        plannedStartDate.addYearsLocalTime(1);
+        plannedEndDate.addYearsLocalTime(1);
+        actualStartDate.addYearsLocalTime(1);
+        actualEndDate.addYearsLocalTime(1);
+        scheduleStartDate.addYearsLocalTime(1);
+        scheduleEndDate.addYearsLocalTime(1);
+        constraintDate.addYearsLocalTime(1);
+
+        gr.start_date = plannedStartDate;
+        gr.end_date = plannedEndDate;
+        gr.work_start = actualStartDate;
+        gr.work_end = actualEndDate;
+        gr.schedule_start_date = scheduleStartDate;
+        gr.schedule_end_date = scheduleEndDate;
+        gr.constraint_date = constraintDate;
+        gr.setWorkflow(false);
+        gs.print('Updated dates for : ' + gr.short_description);
+        gr.update();
+    }
+
+var gr = new GlideRecord('rm_epic');
+gr.addQuery('sys_id', '5f13d0cbdb180010f777526adc96199a');
+    gr.query();
+
+    while (gr.next()) {
+        var plannedStartDate = new GlideDateTime(gr.getValue('start_date'));
+        var plannedEndDate = new GlideDateTime(gr.getValue('end_date'));
+        var actualStartDate = new GlideDateTime(gr.getValue('work_start'));
+        var actualEndDate = new GlideDateTime(gr.getValue('work_end'));
+
+        plannedStartDate.addMonthsLocalTime(28);
+        plannedEndDate.addMonthsLocalTime(28);
+        actualStartDate.addMonthsLocalTime(28);
+        actualEndDate.addMonthsLocalTime(28);
+        
+        gr.start_date = plannedStartDate;
+        gr.end_date = plannedEndDate;
+        gr.work_start = actualStartDate;
+        gr.work_end = actualEndDate;
+        gr.setWorkflow(false);
+        gs.print('Updated dates for : ' + gr.short_description);
+        gr.update();
+    }
+
+    var gr = new GlideRecord('resource_plan');
+    gr.addEncodedQuery('task.short_description=Acme New Hire Surveys');
+    gr.query();
+
+    while (gr.next()) {
+        var startDate = new GlideDateTime(gr.getValue('start_date'));
+        var endDate = new GlideDateTime(gr.getValue('end_date'));
+
+        startDate.addYearsLocalTime(1);
+        endDate.addYearsLocalTime(1);
+        
+        gr.start_date = startDate;
+        gr.end_date = endDate;
+        gr.setWorkflow(false);
+        gs.print('Updated dates for : ' + gr.short_description);
+        gr.update();
+    }
+
+var gr = new GlideRecord('requested_allocation');
+gr.addEncodedQuery('resource_plan.task.short_description=Acme New Hire Surveys');
+    gr.query();
+
+    while (gr.next()) {
+        var startDate = new GlideDateTime(gr.getValue('start_date'));
+        var endDate = new GlideDateTime(gr.getValue('end_date'));
+
+        startDate.addYearsLocalTime(1);
+        endDate.addYearsLocalTime(1);
+        
+        gr.start_date = startDate;
+        gr.end_date = endDate;
+        gr.setWorkflow(false);
+        gs.print('Updated dates for : ' + gr.short_description);
+        gr.update();
+    }
+
+var gr = new GlideRecord('resource_allocation');
+gr.addEncodedQuery('resource_plan.task.short_description=Acme New Hire Surveys');
+    gr.query();
+
+    while (gr.next()) {
+        var startDate = new GlideDateTime(gr.getValue('start_date'));
+        var endDate = new GlideDateTime(gr.getValue('end_date'));
+
+        startDate.addYearsLocalTime(1);
+        endDate.addYearsLocalTime(1);
+        gr.start_date = startDate;
+        gr.end_date = endDate;
+        gr.setWorkflow(false);
+        gr.update();
+    }
+
+var gr = new GlideRecord('resource_allocation_daily');
+gr.addEncodedQuery('task.short_description=Acme New Hire Surveys');
+    gr.query();
+
+    while (gr.next()) {
+        var date = new GlideDateTime(gr.getValue('date'));
+
+        date.addYearsLocalTime(1);
+        gr.date = date;
+        gr.setWorkflow(false);
+        gr.update();
+    }
+
+    var gr = new GlideRecord('cost_plan');
+    gr.addEncodedQuery('task.short_description=Acme New Hire Surveys');
+    gr.query();
+    while (gr.next()) {
+        var startFiscalPeriod = gr.start_fiscal_period;
+        var endFiscalPeriod = gr.end_fiscal_period;
+
+        startFiscalPeriod.addMonthsLocalTime(12);
+        endFiscalPeriod.addMonthsLocalTime(12);
+        gr.start_fiscal_period = startFiscalPeriod;
+        gr.end_fiscal_period = endFiscalPeriod;
+        gr.setWorkflow(false);
+        gr.update();
+    }
+
+    var gr = new GlideRecord('cost_plan_breakdown');
+    gr.query();
+    while (gr.next()) {
+        var startFiscalPeriod = gr.fiscal_period;
+        fiscalPeriod.addMonthsLocalTime(12);
+        gr.fiscal_period = startFiscalPeriod;
+        gr.setWorkflow(false);
+        gr.update();
+    }
+
+     var gr = new GlideRecord('project_status');
+gr.addEncodedQuery('project=ebcba9e4db14401025c85a35dc9619af');    
+gr.query();
+
+    while (gr.next()) {
+        var asOn = new GlideDate();
+        asOn.setValue(gr.getValue('as_on'));
+        var plannedStartDate = new GlideDateTime(gr.getValue('start_date'));
+        var plannedEndDate = new GlideDateTime(gr.getValue('end_date'));
+        var actualStartDate = new GlideDateTime(gr.getValue('work_start'));
+        var actualEndDate = new GlideDateTime(gr.getValue('work_end'));
+        var approvedStartDate = new GlideDateTime(gr.getValue('approved_start_date'));
+        var approvedEndDate = new GlideDateTime(gr.getValue('approved_end_date'));
+        var constraintDate = new GlideDateTime(gr.getValue('constraint_date'));
+
+        asOn.addYearsLocalTime(1);
+        plannedStartDate.addYearsLocalTime(1);
+        plannedEndDate.addYearsLocalTime(1);
+        actualStartDate.addYearsLocalTime(1);
+        actualEndDate.addYearsLocalTime(1);
+        approvedStartDate.addYearsLocalTime(1);
+        approvedEndDate.addYearsLocalTime(1);
+        constraintDate.addYearsLocalTime(1);
+
+        gr.as_on = asOn;
+        gr.start_date = plannedStartDate;
+        gr.end_date = plannedEndDate;
+        gr.work_start = actualStartDate;
+        gr.work_end = actualEndDate;
+        gr.approved_start_date = approvedStartDate;
+        gr.approved_end_date = approvedEndDate;
+        gr.constraint_date = constraintDate;
+        gr.setWorkflow(false);
+        gr.update();
+    }
+
+    var gr = new GlideRecord('time_card');
+    gr.addEncodedQuery('top_task=ebcba9e4db14401025c85a35dc9619af');
+    gr.query();
+
+    while (gr.next()) {
+        var weekStartsOn = new GlideDateTime(gr.getValue('week_starts_on'));
+        weekStartsOn.addYearsLocalTime(1);
+        gr.week_starts_on = weekStartsOn;
+        gr.setWorkflow(false);
+        gr.update();
+    }
+
+    var gr = new GlideRecord('fm_expense_line');
+    gr.addEncodedQuery('task=ebcba9e4db14401025c85a35dc9619af^');
+    gr.query();
+
+    while (gr.next()) {
+        var date = new GlideDateTime(gr.getValue('date'));
+        date.addYearsLocalTime(1);
+        gr.date = date;
+        gr.setWorkflow(false);
+        gr.update();
+    }
+
+]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-12 02:27:13</sys_created_on>
+        <sys_id>45e5297e875cc9109db5dc273cbb35c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>5387b9fd875cc110e339c956cebb35a9</sys_name>
+        <sys_package display_value="Legal Assist" source="x_snc_legal_assist">5e06db671b47a0106c42337cdc4bcbc2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</sys_scope>
+        <sys_update_name>sysauto_script_45e5297e875cc9109db5dc273cbb35c8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-12 02:27:13</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

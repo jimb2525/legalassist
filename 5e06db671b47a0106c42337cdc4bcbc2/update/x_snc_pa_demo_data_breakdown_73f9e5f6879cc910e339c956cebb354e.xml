@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_pa_demo_data_breakdown">
+    <x_snc_pa_demo_data_breakdown action="INSERT_OR_UPDATE">
+        <breakdown display_value="Agent">2e56e0f20be3320097f5064d37673a0e</breakdown>
+        <generator display_value="Summed duration of closed cases">2306dd63db523300cd43596e5e9619c9</generator>
+        <standard_deviations>2.2</standard_deviations>
+        <sys_class_name>x_snc_pa_demo_data_breakdown</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-12 02:45:10</sys_created_on>
+        <sys_id>73f9e5f6879cc910e339c956cebb354e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>2e56e0f20be3320097f5064d37673a0e</sys_name>
+        <sys_package display_value="Legal Assist" source="x_snc_legal_assist">5e06db671b47a0106c42337cdc4bcbc2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</sys_scope>
+        <sys_update_name>x_snc_pa_demo_data_breakdown_73f9e5f6879cc910e339c956cebb354e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-12 02:45:10</sys_updated_on>
+    </x_snc_pa_demo_data_breakdown>
+</record_update>

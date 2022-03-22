@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <name>chrome_header</name>
+        <page display_value="Legal Assist Portal">4efd6b631bc7a0106c42337cdc4bcb1b</page>
+        <required_translations>[]</required_translations>
+        <route display_value="Landing Page">9afd6b63f2c7a01056aae5d75f71c43a</route>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2021-03-28 20:47:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>defd6b632bc7a01005e92ca4c67a0a44</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>chrome_header</sys_name>
+        <sys_package display_value="Legal Assist" source="x_snc_legal_assist">5e06db671b47a0106c42337cdc4bcbc2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</sys_scope>
+        <sys_update_name>sys_ux_page_property_defd6b632bc7a01005e92ca4c67a0a44</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-03-28 20:47:37</sys_updated_on>
+        <type>json</type>
+        <unique_name>x_snc_legal_assist.4efd6b631bc7a0106c42337cdc4bcb1b.route.chrome_header.9afd6b63f2c7a01056aae5d75f71c43a</unique_name>
+        <value>{&#13;
+    "privatePage":{&#13;
+       "searchEnabled": false&#13;
+    }&#13;
+}</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=defd6b632bc7a01005e92ca4c67a0a44"/>
+</record_update>

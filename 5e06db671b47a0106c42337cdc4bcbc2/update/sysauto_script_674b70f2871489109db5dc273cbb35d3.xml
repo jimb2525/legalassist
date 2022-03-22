@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>0e86f17d875cc110e339c956cebb353c</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2021-12-11 23:21:09</run_start>
+        <run_time/>
+        <run_type>once</run_type>
+        <script><![CDATA[var gr = new GlideRecord('pa_indicators');
+gr.addQuery('name','Scrum: Time elapsed in sprint');
+gr.query();
+while(gr.next())
+{
+gr.id = 100000;
+gr.update();
+}
+
+var gr2 = new GlideRecord('pa_indicators');
+gr2.addQuery('name','Scrum: Sum of story points of completed stories in current sprint');
+gr2.query();
+while(gr2.next())
+{
+gr2.id = 100001;
+gr2.update();
+}
+
+var gr3 = new GlideRecord('pa_indicators');
+gr3.addQuery('name','Scrum: Sum of story points of all stories in the current sprint');
+gr3.query();
+while(gr3.next())
+{
+gr3.id = 100002;
+gr3.update();
+}
+
+var gr4 = new GlideRecord('pa_indicators');
+gr4.addQuery('name','Scrum: Sum of story points of active stories in the current sprint');
+gr4.query();
+while(gr4.next())
+{
+gr4.id = 100003;
+gr4.update();
+}
+
+var gr5 = new GlideRecord('pa_indicators');
+gr5.addQuery('name','Scrum: Time elapsed in release');
+gr5.query();
+while(gr5.next())
+{
+gr5.id = 100004;
+gr5.update();
+}
+
+var gr6 = new GlideRecord('pa_indicators');
+gr6.addQuery('name','Scrum: Sum of story points of completed stories in active releases');
+gr6.query();
+while(gr6.next())
+{
+gr6.id = 100005;
+gr6.update();
+}
+
+var gr7 = new GlideRecord('pa_indicators');
+gr7.addQuery('name','Scrum: Sum of story points of all stories in active releases');
+gr7.query();
+while(gr7.next())
+{
+gr7.id = 100006;
+gr7.update();
+}
+
+var gr8 = new GlideRecord('pa_indicators');
+gr8.addQuery('name','Scrum: Sum of story points of active stories in the current release');
+gr8.query();
+while(gr8.next())
+{
+gr8.id = 100007;
+gr8.update();
+}
+
+
+var gr9 = new GlideRecord('pa_breakdowns');
+gr9.addQuery('name','Scrum: Sprint');
+gr9.query();
+while(gr9.next())
+{
+gr9.id = 200000;
+gr9.update();
+}
+
+var gr10 = new GlideRecord('pa_breakdowns');
+gr10.addQuery('name','Scrum: Prior Sprint');
+gr10.query();
+while(gr10.next())
+{
+gr10.id = 200001;
+gr10.update();
+}
+
+var gr11 = new GlideRecord('pa_breakdowns');
+gr11.addQuery('name','Scrum: Current Sprint');
+gr11.query();
+while(gr11.next())
+{
+gr11.id = 200002;
+gr11.update();
+}
+
+var gr12 = new GlideRecord('pa_breakdowns');
+gr12.addQuery('name','Scrum: Release');
+gr12.query();
+while(gr12.next())
+{
+gr12.id = 200003;
+gr12.update();
+}
+
+var gr13 = new GlideRecord('pa_breakdowns');
+gr13.addQuery('name','Scrum: Prior Release');
+gr13.query();
+while(gr13.next())
+{
+gr13.id = 200004;
+gr13.update();
+}
+
+var gr14 = new GlideRecord('pa_breakdowns');
+gr14.addQuery('name','Scrum: Current Release');
+gr14.query();
+while(gr14.next())
+{
+gr14.id = 200005;
+gr14.update();
+}
+
+
+var gr16 = new GlideRecord('pa_indicators');
+gr16.addQuery('name','Scrum: Sum of story points of completed stories in epics');
+gr16.query();
+while(gr16.next())
+{
+gr16.id = 100008;
+gr16.update();
+}
+
+var gr17 = new GlideRecord('pa_indicators');
+gr17.addQuery('name','Scrum: Sum of story points of all stories in epics');
+gr17.query();
+while(gr17.next())
+{
+gr17.id = 100009;
+gr17.update();
+}
+
+var gr18 = new GlideRecord('pa_breakdowns');
+gr18.addQuery('name','Scrum: Epic');
+gr18.query();
+while(gr18.next())
+{
+gr18.id = 200006;
+gr18.update();
+}
+]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-11 23:21:09</sys_created_on>
+        <sys_id>674b70f2871489109db5dc273cbb35d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>0e86f17d875cc110e339c956cebb353c</sys_name>
+        <sys_package display_value="Legal Assist" source="x_snc_legal_assist">5e06db671b47a0106c42337cdc4bcbc2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</sys_scope>
+        <sys_update_name>sysauto_script_674b70f2871489109db5dc273cbb35d3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-11 23:21:09</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>
