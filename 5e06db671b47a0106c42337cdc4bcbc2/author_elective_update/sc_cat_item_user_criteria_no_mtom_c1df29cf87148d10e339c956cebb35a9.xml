@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom">
+    <sc_cat_item_user_criteria_no_mtom action="DELETE">
+        <sc_cat_item display_value="">41df29cf87148d10e339c956cebb35a4</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-12 21:49:08</sys_created_on>
+        <sys_id>c1df29cf87148d10e339c956cebb35a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record producer for: Loaders -Consolidate IT Services-Rome.SNC External</sys_name>
+        <sys_package display_value="Legal Assist" source="x_snc_legal_assist">5e06db671b47a0106c42337cdc4bcbc2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_c1df29cf87148d10e339c956cebb35a9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-12 21:49:08</sys_updated_on>
+        <user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria>
+    </sc_cat_item_user_criteria_no_mtom>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</application>
+        <file_path/>
+        <instance_id>4c90a1171bc7a018c8432f8dee4bcbd3</instance_id>
+        <instance_name>appenginelegalassistantdemo</instance_name>
+        <name>sc_cat_item_user_criteria_no_mtom_c1df29cf87148d10e339c956cebb35a9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom"><sc_cat_item_user_criteria_no_mtom action="INSERT_OR_UPDATE"><sc_cat_item display_value="">41df29cf87148d10e339c956cebb35a4</sc_cat_item><sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-12-12 21:49:08</sys_created_on><sys_id>c1df29cf87148d10e339c956cebb35a9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Record producer for: Loaders -Consolidate IT Services-Rome.SNC External</sys_name><sys_package display_value="Legal Assist" source="x_snc_legal_assist">5e06db671b47a0106c42337cdc4bcbc2</sys_package><sys_policy/><sys_scope display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</sys_scope><sys_update_name>sc_cat_item_user_criteria_no_mtom_c1df29cf87148d10e339c956cebb35a9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-12-12 21:49:08</sys_updated_on><user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria></sc_cat_item_user_criteria_no_mtom></record_update>]]></payload>
+        <payload_hash>1230699685</payload_hash>
+        <record_name>Record producer for: Loaders -Consolidate IT Services-Rome.SNC External</record_name>
+        <reverted_from/>
+        <source>4188bc22873011101c767737dabb350d</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2022-07-22 21:13:03</sys_created_on>
+        <sys_id>dcd8f27797bc1910ec6efa100153af2e</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>18227c1b7180000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Catalog Item Not Available for</type>
+        <update_guid>9cd8f277bbbc1910304ea24d3071ae2e</update_guid>
+        <update_guid_history>9cd8f277bbbc1910304ea24d3071ae2e:1230699685</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record producer for: Loaders -Consolidate IT Services-Rome.SNC External">d0d8f27797bc1910ec6efa100153af31</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2022-07-27 03:46:00</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_user_criteria_no_mtom">sc_cat_item_user_criteria_no_mtom</sys_db_object>
+        <sys_id>0adf227162d247ad80f23617057888c9</sys_id>
+        <sys_metadata>c1df29cf87148d10e339c956cebb35a9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record producer for: Loaders -Consolidate IT Services-Rome.SNC External</sys_name>
+        <sys_package display_value="Legal Assist" source="x_snc_legal_assist">5e06db671b47a0106c42337cdc4bcbc2</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</sys_scope>
+        <sys_scope_delete display_value="">a92f9d1f20ad4ff1897d06ce7f79ee91</sys_scope_delete>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_c1df29cf87148d10e339c956cebb35a9</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_user_criteria_no_mtom_c1df29cf87148d10e339c956cebb35a9">dcd8f27797bc1910ec6efa100153af2e</sys_update_version>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2022-07-27 03:46:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_theme_m2m_asset">
+    <sys_ux_theme_m2m_asset action="DELETE">
+        <asset display_value="MichaelBestLogo">34224a6687a405909db5dc273cbb357a</asset>
+        <properties>{&#13;
+    "position" : "header_logo"&#13;
+}&#13;
+</properties>
+        <sys_class_name>sys_ux_theme_m2m_asset</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-12-23 20:10:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>47120a6687a405909db5dc273cbb35e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Legal Assist" source="x_snc_legal_assist">5e06db671b47a0106c42337cdc4bcbc2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</sys_scope>
+        <sys_update_name>sys_ux_theme_m2m_asset_47120a6687a405909db5dc273cbb35e9</sys_update_name>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-12-23 20:10:09</sys_updated_on>
+        <theme display_value="MB Theme">f431422687a405909db5dc273cbb35ea</theme>
+    </sys_ux_theme_m2m_asset>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</application>
+        <file_path/>
+        <instance_id>4c90a1171bc7a018c8432f8dee4bcbd3</instance_id>
+        <instance_name>appenginelegalassistantdemo</instance_name>
+        <name>sys_ux_theme_m2m_asset_47120a6687a405909db5dc273cbb35e9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_theme_m2m_asset"><sys_ux_theme_m2m_asset action="INSERT_OR_UPDATE"><asset display_value="MichaelBestLogo">34224a6687a405909db5dc273cbb357a</asset><properties>{&#13;
+    "position" : "header_logo"&#13;
+}&#13;
+</properties><sys_class_name>sys_ux_theme_m2m_asset</sys_class_name><sys_created_by>james.belote</sys_created_by><sys_created_on>2021-12-23 20:10:09</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>47120a6687a405909db5dc273cbb35e9</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="Legal Assist" source="x_snc_legal_assist">5e06db671b47a0106c42337cdc4bcbc2</sys_package><sys_policy/><sys_scope display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</sys_scope><sys_update_name>sys_ux_theme_m2m_asset_47120a6687a405909db5dc273cbb35e9</sys_update_name><sys_updated_by>james.belote</sys_updated_by><sys_updated_on>2021-12-23 20:10:09</sys_updated_on><theme display_value="MB Theme">f431422687a405909db5dc273cbb35ea</theme></sys_ux_theme_m2m_asset></record_update>]]></payload>
+        <payload_hash>-961772258</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>d206db671b47a0106c42337cdc4bcbc5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2021-12-23 20:10:09</sys_created_on>
+        <sys_id>a6a28a6687a405909db5dc273cbb3537</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17de8ea4d270000001</sys_recorded_at>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2021-12-23 20:10:09</sys_updated_on>
+        <type>UX Theme Assets</type>
+        <update_guid>aea28a66d8a405905406627e978f9c36</update_guid>
+        <update_guid_history>aea28a66d8a405905406627e978f9c36:-961772258</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2022-04-14 13:59:55</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_theme_m2m_asset">sys_ux_theme_m2m_asset</sys_db_object>
+        <sys_id>45973b42bce54a029bc8fbae18212804</sys_id>
+        <sys_metadata>47120a6687a405909db5dc273cbb35e9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Legal Assist" source="x_snc_legal_assist">5e06db671b47a0106c42337cdc4bcbc2</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Legal Assist">5e06db671b47a0106c42337cdc4bcbc2</sys_scope>
+        <sys_scope_delete display_value="">a92f9d1f20ad4ff1897d06ce7f79ee91</sys_scope_delete>
+        <sys_update_name>sys_ux_theme_m2m_asset_47120a6687a405909db5dc273cbb35e9</sys_update_name>
+        <sys_update_version display_value="sys_ux_theme_m2m_asset_47120a6687a405909db5dc273cbb35e9">a6a28a6687a405909db5dc273cbb3537</sys_update_version>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2022-04-14 13:59:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
